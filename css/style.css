@@ -391,6 +391,7 @@ input{
     background-color: #fff;
     border: 2px solid #FA5959;
     color: #FA5959;
+    padding: 6px 18px;
 }
 footer{
     display: flex;
