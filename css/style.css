@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+/* @media screen and (min-width:400px) {
+    .container{max-width: 380px;}
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 1600px;
+    margin: 0 auto;
+}
+nav{
+    display: flex;
+    padding: 50px;
+    margin-bottom: 120px;
+    align-items: center;
+}
+.logo{
+    margin-right: auto;
+    position: relative;
+    color: black;
+    text-decoration: none;
+}
+.img-logo{
+    position: absolute;
+    top: -2px;
+    left: -30px;
+}
+.nav-list-link{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-list{
+    list-style-type: none;
+    display: flex;
+}
+.nav-list__list-item{
+    font-family: 'Rubik';
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 17px;
+    margin:0px 10px;
+    text-transform: uppercase;
+}
+.nav-list__list-item:nth-child(4){
+    color: white;
+    background-color: #FA5959ff;
+    text-align: center;
+    line-height: 40px;
+    width: 110px;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: -13px;
+}
+.nav-list__list-item:nth-child(4):hover{
+    background-color: #fff;
+    color: #FA5959ff;
+    border: #FA5959 solid 3px;line-height: 35px;
+}
+header{
+    padding-top: 80px;
+    display: flex;
+    padding-bottom: 300px;
+}
+
+.header-title{
+    width: 560px;
+    font-family: 'Rubik';
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 52px;
+}
+.header-body > p{
+    font-family:'Rubik';
+
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #242A45;
+    margin-bottom: 40px;
+    width: 540px;
+}
+.header-link{
+    font-family: 'Rubik';
+    font-size: 15px;
+    font-weight: 500,medium;
+    line-height: 28px;
+    text-decoration:none;
+    color: white;
+    padding: 15px 20px;
+    background-color: #5267DF;
+    border-radius: 5px;
+}
+.blue:hover{
+    padding: 15px 18px;
+    color: #5267DF;
+    border: #5267DF solid 2px;
+    background-color: #fff;
+}
+.white{
+    margin-left: 5px;
+    color: #242A45;
+    background-color: #F7F7F7;
+    border-radius: 5px;
+}
+.white:hover{
+    padding: 15px 18px;
+    color: #5B6074;
+    background-color: #fff;
+    border: 2px solid #5B6074;
+}
+.header-img-block{
+    margin-left: 350px;
+    position: relative;
+}
+.header-img{
+    position: relative;
+    z-index: 2;
+}
+.rectangle{
+    position: absolute;
+    right: -140px;
+    top: 180px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+.main-title{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-title > h1{
+    font-family: 'Rubik';
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 52px;
+}
+.main-title > p{
+    font-family: 'Rubik';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    width: 540px;
+    color: #9194A2;
+}
+.tabs__items{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.line{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-size: 50px;
+}
+.tab-link{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px;
+    text-decoration: none;
+    color: #242A45;
+    font-family: 'Rubik';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 17px;
+}
+.tab-link:hover{
+    color: #FA5959;
+}
+.content-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.tabs__block{
+    min-height: 400px;
+    display: none;
+}
+.tab-img{
+    position: absolute;
+    left: 0px;
+    top: 1500px;
+}
+.tab-frame{
+    z-index: 3;
+    margin-right: 140px;
+}
+.tabs-title{
+    color: #242A45;
+    font-family: 'Rubik';
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 52px;
+}
+.tabs__subtitle{
+    width: 445px;
+    font-family:'Rubik';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #9194A2;
+    margin-bottom: 32px;
+}
+.tabs__link{
+    text-decoration: none;
+    background-color: #5267DF;
+    padding: 10px 25px;
+    border-radius: 5px;
+    color: white;
+}
+.tabs__block:target{
+    display: block;
+}
+
+.tab-link:focus{
+    border-bottom: 3px solid #FA5959;
+}
+.download-section{
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+.cards{
+    margin: 0 auto;
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    gap: 30px;
+    width: 80%;
+    height: 450px;
+}
+.card2{
+    align-self: center;
+}
+.card3{
+    align-self: flex-end;
+}
+.card{
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 50px;
+    width: 280px;
+    height: 370px;
+    box-shadow: 0px 10px 20px -5px rgba(73, 93, 207, 0.20012);
+    border-radius: 15px;
+    background-color: white;
+}
+.card__img{
+    margin-bottom: 32px;
+}
+.card__title{
+    font-family: 'Rubik';
+    font-size: 20px;
+    font-weight: 500,medium;
+    line-height: 24px;
+}
+.card__text{
+    margin-top: 6px;
+    margin-bottom: 30px;
+    font-family: 'Rubik';
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #9194A2;
+}
+.card__footer-block{
+    border-top: dotted black 3px;
+    height: 30%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card__link{
+    font-family: 'Rubik';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 28px;
+
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    background-color: #5267DF;
+    border-radius: 5px;
+}
+.card__link:hover{
+    color: #5267DF;
+    border: #5267DF solid 2px;
+    background-color: #fff;
+}
+
+.questions{
+    margin-top: 15px;
+    margin-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.block{
+    padding-top: 10px;
+    padding-right: 25px;
+    width: 640px;height: 300px;
+}
+.block__link{
+    display: flex;
+    border-top: 1.5px solid rgba(51, 51, 51, 0.164);
+    text-decoration: none;
+    padding: 15px 0px;
+}
+.block__link:hover{
+    color: #FA5959;
+}
+.border{
+    border-bottom: 1.5px solid rgba(51, 51, 51, 0.164);
+}
+.block__link > h3{
+    font-family: 'Rubik';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-right: auto;
+}
+.fas{
+    color: #5267DF;
+    font-size: 30px;
+}
+.block__link2{
+    padding: 15px 20px;
+}
+
+.pre-footer{
+    background-color: #5267DF;
+    display: flex;justify-content: center;
+    align-items: center;
+    flex-direction: column;padding: 65px 0px;
+}
+
+.pre-footer__desc > *{
+    text-align: center;
+    color: white;
+}
+.pre-footer__desc > p{
+    font-family: 'Rubik';
+font-size: 13px;
+font-weight: 500;
+line-height: 40px;
+}
+.pre-footer__desc > h5{
+    font-family: 'Rubik';
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 40px;
+    width: 420px;
+    margin-bottom: 35px;
+}
+.email{
+    display: flex;
+}
+input{
+    padding: 10px 10px;
+    padding-right: 40px;
+    border-radius: 5px;
+    margin-right: 15px;
+    border: solid 2px #FA5959;
+}
+.pre-footer__link{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 28px;
+    padding: 8px 20px;
+    background-color: #FA5959;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: transparent;
+}
+.pre-footer__link:hover{
+    background-color: #fff;
+    border: 2px solid #FA5959;
+    color: #FA5959;
+}
+footer{
+    display: flex;
+    padding: 38px 80px;
+    background-color: #242A45;
+}
+.flex{
+    display: flex;
+}
+.footer-logo{
+    text-decoration: none;
+    position: relative;
+    color: white;
+    font-family: "Rubik" sans-serif;
+}
+.footer-block{
+    margin-right: auto;
+    margin-left: 65px;
+}
+.footer-block__link{
+    margin-right: 45px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Rubik';
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 17px;
+}
+.footer-block__link:hover{
+    color: #FA5959;
+}
+.icons > i{
+    font-size: 30px;
+    color: white;
+}
+.icons > i{
+    margin-left: 40px;
+}
+.icons > i:hover{
+    color: #FA5959;
+}
