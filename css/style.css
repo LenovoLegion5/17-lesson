@@ -317,6 +317,7 @@ main{
     border-top: 1.5px solid rgba(51, 51, 51, 0.164);
     text-decoration: none;
     padding: 15px 0px;
+    color: #242A45;
 }
 .block__link:hover{
     color: #FA5959;
