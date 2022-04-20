@@ -47,6 +47,9 @@ nav{
     margin:0px 10px;
     text-transform: uppercase;
 }
+.nav-list__list-item:hover{
+    color: #FA5959;
+}
 .nav-list__list-item:nth-child(4){
     color: white;
     background-color: #FA5959ff;
@@ -396,8 +399,8 @@ input{
     padding: 6px 18px;
 }
 footer{
-    padding: 38px 80px;
     background-color: #242A45;
+    padding: 38px 80px;
 }
 .flex{
     display: flex;
@@ -434,4 +437,7 @@ footer{
 }
 .icons > i:hover{
     color: #FA5959;
+}
+@media screen and (max-width:) {
+    
 }
